@@ -183,6 +183,11 @@ a:not([href]):hover {
   text-decoration: none;
 }
 
+.a-big {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
 pre,
 code,
 kbd,
@@ -4033,7 +4038,8 @@ input[type=button].btn-block {
   border-radius: 0.25rem;
 }
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show > .nav-link 
+{
   color: #fff;
   background-color: #64a19d;
 }
@@ -10231,7 +10237,7 @@ body {
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: NanumBarunGothicBold, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -10244,17 +10250,19 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.3) 50%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0.4) 40%, #000000 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
+
 .masthead h1 {
   font-family: NanumBarunGothicBold, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.1rem;
   /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
    -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -10298,34 +10306,50 @@ body {
   }
 }
 
-.introduce-section{
-  padding-top: 10rem;
-  background: rgba(0, 0, 0);
+#masthead-markin-pro {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.9) 85%, #000000 100%), url("../assets/img/demo-image-00.jpg");
+}
+#masthead-markin-re {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.9) 85%, #000000 100%), url("../assets/img/demo-image-01.jpg");
+}
+#masthead-markin-ls {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.9) 85%, #000000 100%), url("../assets/img/demo-image-02.jpg");
 }
 
-.introduce-section .card {
+#masthead-markin-pro h2, #masthead-markin-re h2, #masthead-markin-ls h2 {
+  font-size: 4rem;
+  line-height: 0.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.kcg-section{
+  background: rgba(0, 0, 0);
+  padding-bottom: 5rem;
+}
+
+.kcg-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
 }
 
-.introduce-section p {
+.kcg-section p {
   margin-bottom: 5rem;
 }
 
-.introduce-section .card h4 {
+.kcg-section .card h4 {
   font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: NanumBarunGothicBold, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
-.introduce-section .card hr {
+.kcg-section .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
 }
 
-.history-section, .system-section, .point-section, .function-section, .field-section {
+.kcg-section, .history-section, .system-section, .point-section, .function-section, .field-section {
   padding-top: 10rem;
 }
 
@@ -10369,38 +10393,35 @@ body {
   margin-bottom: 5rem;
 }
 
-.markin-section {
+.project-section {
   padding: 10rem 0;
 }
-.markin-section .featured-text{
+.project-section .featured-text{
   padding: 2rem;
 }
 
-.markin-section .project-text {
+.project-section .project-text {
   padding: 3rem;
   font-size: 90%;
 }
 
 @media (min-width: 992px) {
-  .markin-section .featured-text{
+  .project-section .featured-text{
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
 
 @media (min-width: 992px) {
-  .markin-section .project-text {
+  .project-section .project-text {
     padding: 5rem;
   }
-  .markin-section .project-text hr {
+  .project-section .project-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
   }
 }
-
-
-
 
 .signup-section {
   padding: 10rem 0;
@@ -10414,7 +10435,7 @@ body {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: NanumBarunGothicBold, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -10422,7 +10443,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 .contact-section .card {
   border: 0;
@@ -10430,7 +10451,7 @@ body {
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: NanumBarunGothicBold, "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -10457,7 +10478,12 @@ body {
 .contact-section .social a:active {
   color: #fff;
 }
-
 .footer {
-  padding: 5rem 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
+.buy-section{
+  width: 100%;
+  height: 1427px;
+}
+

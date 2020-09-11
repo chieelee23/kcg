@@ -69,6 +69,21 @@
         modal.find('.news-id').val(recipient)
     })
 
+    $('#keynoteModal').on('show.bs.modal', function (event) {
+        var a = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = a.data('img') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        console.log(recipient)
+        //modal.find('.modal-title').text('New message to ' + recipient)
+
+        // var img = modal.find('img.img-fluid')
+        // var imgSrc = recipient
+        // img.attr("src", imgSrc)
+        // modal.find('.news-id').val(recipient)
+    })   
+
 })(jQuery); // End of use strict
 
 
